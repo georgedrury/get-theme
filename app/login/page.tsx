@@ -16,6 +16,8 @@ import { Input } from "@/components/ui/input"
 import Link from "next/link"
 import AuthButtonServer from "@/components/auth-button-server"
 
+export const dynamic = "force-dynamic"
+
 export default async function Login() {
 	const supabase = createServerComponentClient({ cookies })
 
@@ -60,7 +62,7 @@ export default async function Login() {
 							<Button formAction="/auth/login">Sign in</Button>
 						</div>
 					</form>
-					<CardFooter className="justify-center mt-8 p-0">
+					{/* <CardFooter className="justify-center mt-8 p-0">
 						<p className="text-sm text-zinc-500 text-center">
 							<span>Don&apos;t have an account</span>
 							<Link
@@ -70,7 +72,7 @@ export default async function Login() {
 								Sign up
 							</Link>
 						</p>
-					</CardFooter>
+					</CardFooter> */}
 				</CardContent>
 			</Card>
 		</div>

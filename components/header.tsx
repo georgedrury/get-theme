@@ -6,6 +6,8 @@ import { cookies } from "next/headers"
 import AuthButtonClient from "./auth-button-client"
 import AuthButtonServer from "./auth-button-server"
 
+export const dynamic = "force-dynamic"
+
 export default async function Header() {
 	const supabase = createServerComponentClient({ cookies })
 	const {

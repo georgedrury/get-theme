@@ -24,7 +24,9 @@ export default function SignUp() {
 							lol
 						</Badge>
 					</CardTitle>
-					<CardDescription className="my-2">Sign up now</CardDescription>
+					<CardDescription className="my-2">
+						Currently not allowing sign ups
+					</CardDescription>
 					<form
 						action="/auth/login"
 						method="post"
@@ -44,16 +46,8 @@ export default function SignUp() {
 								pattern=".{6},}"
 							/>
 						</div>
-						<Button formAction="/auth/sign-up">Sign up</Button>
 					</form>
-					{/* <form action="/auth/login" method="post">
-						<label htmlFor="email">Email</label>
-						<input name="email" />
-						<label htmlFor="password">Password</label>
-						<input type="password" name="password" />
-						<button>Sign In</button>
-						<button formAction="/auth/sign-up">Sign Up</button>
-					</form> */}
+
 					<CardFooter className="justify-center mt-8 p-0">
 						<p className="text-sm text-zinc-500 text-center">
 							Already have an account?{" "}
